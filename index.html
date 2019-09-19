@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <title>Portfólio Guilherme Luiz</title>
-    </head>
+<head>
+  <title>GUILHERME LUIZ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header class="w3-container w3-green">
-        <h1>Portfólio Guilherme Luiz</h1>
-    </header>
-    
-    <img id="port_img" width="200" src="img/Guilherme.jpeg" alt="Homem feliz sorrindo">
-    
-    <h2 id="port_perfil"> Quem sou eu? (Joguei onde?)</h2>
-    <ul class="lista">
-        <li>Meu nome completo é <span class="fonte">Guilherme Luiz de Assis Campos.</span><br></li>
-        <li>Tenho <span class="estilo">18 anos</span> de idade.<br></li>
-        <li>Nasci em <span class="estilo">Belo Horizonte/Minas Gerais</span> e desde então continuo vivendo aqui.<br></li>
-    </ul>
-    
-    <h2 id="port_hab"> O que eu faço de bom?</h2>
-    <ul id="habilidades" class="lista">
-        <li>Sou persistente e sempre corro atrás de resolver o problema.<br></li>
-        <li>Tenho facilidade em aprender coisas novas.<br></li>
-        <li>Sou paciente e escuto com atenção<br></li>
-        <li>Sou adaptável e encaixo muito bem nas funções designadas<br></li>
-    </ul>
 
-    <h2 id="port_blogs">Alguns conteúdos legais</h2>
-    <ol>
+<nav class="navbar navbar-default" id="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#" style="color: #1abc58">Guilherme Luiz</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#quem">QUEM SOU</a></li>
+        <li><a href="#oque">OQUE FAÇO</a></li>
+        <li><a href="#aonde">AONDE ESTUDEI</a></li>
+        <li><a href="#conteudos">RECOMENDAÇÕES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid bg-1 text-center" id="quem">
+  <h2 class="margin">Quem sou eu?</h2>
+  <img src="img/Guilherme.jpeg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+  <h5>Meu nome completo é </h5> <h3 style="margin-top: 0px; margin-bottom:16px;">Guilherme Luiz de Assis Campos</h3>
+  <h4>Tenho 18 anos de idade.</h4>
+  <h4>Nasci em Belo Horizonte/Minas Gerais e desde então continuo vivendo aqui.</h4>      
+  <h3 style="margin-top: 25px">Sou um estudante dedicado e motivado com um sonho de se tornar um ótimo programador</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center" id="oque">
+    <h2 class="margin">Oque eu faço de bom?</h2>
+    <p>Sou persistente e sempre corro atrás de resolver o problema.<br></p>
+    <p>Tenho facilidade em aprender coisas novas.<br></p>
+    <p>Sou paciente e escuto com atenção.<br></p>
+    <p style="margin-bottom: 30px">Sou adaptável e encaixo muito bem nas funções designadas.<br></p>
+    <a href="#habilidades" class="btn btn-default btn-lg">
+        <span class="glyphicon glyphicon-th-list"></span> Ver todas habilidades
+    </a>
+</div>
+
+<div class="container-fluid bg-3 text-center" id="aonde">
+    <h2 class="margin">Estudei onde?</h2><br>
+    <div class="row">
+        <div class="col-sm-4">
+            <p>Colégio Santo Antônio</p>
+            <img src="img/csa.png" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Colégio Cotemig</p>
+            <img src="img/cotemig.png" class="img-responsive margin" style="width:95%" alt="Image">
+        </div>
+        <div class="col-sm-4">
+            <p>Trybe (Atualmente)</p>
+            <img src="img/trybe.png" class="img-responsive margin" style="width:55%; margin-left: 22%" alt="Image">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-2" id="conteudos">
+    <h2 class="margin text-center">Alguns conteúdos legais</h2>
+    <ul>
         <li><a href="https://github.com/">GitHub</a></li>
-        <p>Ferramenta essencial para progamadores, trabalhe no mesmo projeto/arquivo que sua equipe de forma organizada e prática, faz com que você e seu time consigam colaborar na criação do projeto.</p>
+        <p>Ferramenta essencial para progamadores, trabalhe no mesmo projeto/arquivo que sua equipe de forma organizada
+            e
+            prática, faz com que você e seu time consigam colaborar na criação do projeto.</p>
         <li><a href="https://www.w3schools.com">W3 Schools</a></li>
         <p>Site muito útil para <em>todas</em> pessoas que convivem com códigos e com programação.</p>
         <li><a href="https://pt.stackoverflow.com/">Stack Overflow</a></li>
         <p>Blog que ajuda bastante na hora de procurar por erros e soluções para seu código.</p>
         <li><a href="https://aurelio.net/">Blog do Aurélio</a></li>
         <p>Blog com conteúdos úteis para te ajudar a aprender a programar.</p>
-    </ol>
-
-    <h3>Está perdido?</h3>
-    <ul>
-        <li><a href="#port_img">Volte para <strong>apreciar</strong> mais uma vez minha <strong>linda foto</strong></a></li>
-        <li><a href="#port_perfil">Volte para minha <strong>grandiosa</strong> história de vida</a>.</li>
-        <li><a href="#port_hab">Volte para minhas <strong>habilidades extraordinárias</strong>.</a></li>
-        <li><a href="#port_blogs">Volte para blogs <strong>sensacionais</strong> que vão te ajudar no dia a dia.</a></li>
     </ul>
+</div>
 
+<div class="container-fluid bg-3" id="habilidades">
+    <h2 class="margin text-center">Todas minhas habilidades:</h2>
+    <ul>
+        <li>Inglês intermediário.</li>
+        <li>Operar pacote Office.</li>
+        <li>Linguagens de programação (HTML, CSS, PHP, Swift, Java, ASP.NET, Ionic Framework).</li>
+        <li>Banco de dados (MySQL).</li>
+        <li>Edição de fotos no software GIMP.</li>
+        <li>Criar lojas virtuais de Dropshipping.</li>
+        <li>Anunciar no Facebook Ads.</li>
+    </ul>
+</div>
+
+<script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+</script>
 </body>
 </html>

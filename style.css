@@ -54,3 +54,8 @@
       color: #1abc58;
       font-weight: bold;
   }
+  .redes_sociais {
+    position: fixed;
+    top: 3%;
+    z-index: 3;
+  }

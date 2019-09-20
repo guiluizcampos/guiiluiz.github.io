@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ADOÇÃO ANIMAL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-default sticky" id="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#home">Amizade Canina</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#quem">QUEM SOMOS</a></li>
+                <li><a href="#cachorros">PETS</a></li>
+                <li><a href="#comoadotar">COMO ADOTAR</a></li>
+                <li><a href="#requisitos">REQUISITOS</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+<!-- Conteiner 1 -->
+<div class="container-fluid bg-3 text-center" id="home">
+    <h1 style="margin-top: 50px; color: #5d4a47">Não Compre, <strong>ADOTE</strong>!</h1>
+    <span id="quem"></span>
+</div>
+
+<!-- Conteiner 2 -->
+<div class="container-fluid bg-1 text-center">
+    <h2 class="margin" style="margin-top: 0px">QUEM SOMOS</h2>
+    <h3 style="margin-top: 0px; margin-bottom:40px;">Somos uma organização com o objetivo de ajudar cachorros a serem
+        adotados.</h3>
+    <p>Ajudamos a divulgar cachorros para adoção e disponibilizamos um lugar temporário seguro, <br>
+        com água e ração até o animal encontrar um dono definitivo.</p>
+    <h4 style="margin-top: 30px">Recebemos apoio financeiro de doações e
+        funcionários através de trabalhos voluntários. <a href="http://www.caoviver.com.br/como-ajudar/" target="_blank">Ajude-nos</a></h4>
+    <span id="cachorros"></span>
+</div>
+
+<!-- Conteiner 3 -->
+<div class="container-fluid bg-2 text-center">
+    <h2 class="margin" style="margin-bottom: 80px">Cães disponíveis para adoção</h2>
+
+    <!-- Imagens Cachorros -->
+    <div class="row">
+        <div class="col-sm-2">
+            <p>Hurricane</p>
+            <img src="img/cachorro1.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2">
+            <p>Lulu</p>
+            <img src="img/cachorro2.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2">
+            <p>Bob</p>
+            <img src="img/cachorro3.jpg" class="img-responsive margin" style="width:90%; margin-left:12px " alt="Image">
+        </div>
+        <div class="col-sm-2">
+            <p>Rex</p>
+            <img src="img/cachorro4.jpg" class="img-responsive margin" style="width:100%; height: 130px;" alt="Image">
+        </div>
+        <div class="col-sm-2">
+            <p>Nina</p>
+            <img src="img/cachorro5.jpeg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2">
+            <p>Tony</p>
+            <img src="img/cachorro6.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+    </div>
+
+    <!-- Botão Detalhes -->
+    <a href="#cachorros" class="btn btn-default btn-lg" style="margin-top: 50px" data-toggle="modal"
+        data-target="#detalheAnimal">
+        <span class="glyphicon glyphicon-th-list"></span> Detalhes dos animais
+        <span id="comoadotar"></span>
+    </a>
+
+    <!-- Modal Detalhes -->
+    <div id="detalheAnimal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content bg-2">
+                <div class="modal-header">
+                    <button type="button" class="close bg-1" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title bg-2"><strong>Detalhes dos Animais</strong></h4>
+                </div>
+                <div class="modal-body bg-3">
+                    <table id="customers">
+                        <tr>
+                            <th class="text-center">Nome</th>
+                            <th class="text-center">Raça</th>
+                            <th class="text-center">Vacinado</th>
+                        </tr>
+                        <tr>
+                            <td>Hurricane</td>
+                            <td>Vira-lata</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Lulu</td>
+                            <td>Shih Tzu</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Bob</td>
+                            <td>Husky Siberiano</td>
+                            <td>Sim</td>
+                        </tr>
+                        <tr>
+                            <td>Rex</td>
+                            <td>Chiuaua</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>Nina</td>
+                            <td>Rottweiler</td>
+                            <td>Não</td>
+                        </tr>
+                        <tr>
+                            <td>Tony</td>
+                            <td>Bulldog Inglês</td>
+                            <td>Não</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+    
+<!-- Conteiner 4 -->
+<div class="container-fluid bg-3">
+    <h2 class="text-center" style="margin-bottom: 70px">Como Adotar</h2>
+    <h3 class="text-center" style="margin-bottom:40px">Passo a passo de como adotar:</h3>
+    <ol>
+        <li>Confira os requisitos!</li>
+        <li>Dê uma olhada nos animais disponíveis para adoção.</li>
+        <li>Escolha o(s) animal(is) que você deseja adotar.</li>
+        <li>Entre em contato conosco para mais informações.</li>
+    </ol>
+    <span id="requisitos"></span>
+</div>
+
+<!-- Conteiner 5 -->
+<div class="container-fluid bg-3">
+    <h2 class="margin text-center" style="margin-bottom: 75px">Requisitos para Adoção</h2>
+    <ul>
+        <li>Capacidade financeira de cuidar de um animal</li>
+        <p>A pessoa que quiser adotar um cãozinho tem que ter no mínimo capacidade para comprar alimento para o animal.
+        </p>
+        <li>Lugar disponível</li>
+        <p>A pessoa que quiser adotar um cãozinho tem que ter um local disponível para criação do animal.</p>
+        <li>Carinho</li>
+        <p>A pessoa que quiser adotar um cãozinho tem que dar atenção e carinho para o animal.</p>
+        <li>Comprometimento</li>
+        <p>A pessoa que quiser adotar um cãozinho tem que ter comprometimento que irá cuidar do animal com muito amor.
+        </p>
+    </ul>
+</div>
+
+<footer class="container-fluid bg-2 text-center">
+    <p>Fiz um rodapé só porque é obrigatório! Agora <a href="#home" style="color: rgb(255, 226, 163)">volta la pro começo</a></p>
+</footer>
+
+</body>
+</html>

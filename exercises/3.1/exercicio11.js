@@ -24,3 +24,6 @@ if(salBruto < 1903.99) {
 }else{
     ir = 27.5/100 * salBruto - 869.36;
 }
+
+salLiq = salBruto - ir - inss;
+console.log(salLiq);

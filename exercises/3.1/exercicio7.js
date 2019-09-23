@@ -1,0 +1,1 @@
+let porcentagem = 80;

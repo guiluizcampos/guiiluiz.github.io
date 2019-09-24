@@ -1,12 +1,11 @@
 let n = 5;
 let array = [];
-let espaco, ast, res;
+let espaco, res;
 
-for(let i = 0; i < n; i++) {
-    if(i % 2 == 0) {
+for(let i = 1; i <= n; i++) {
+    if(i % 2 !== 0) {
         espaco = (n - i) / 2;
-        ast = i + 1;
-        res = " ".repeat(espaco) + "*".repeat(ast) + " ".repeat(espaco);
+        res = " ".repeat(espaco) + "*".repeat(i) + " ".repeat(espaco);
         console.log(res);
     }
-    }
+}

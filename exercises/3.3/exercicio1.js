@@ -1,4 +1,4 @@
-function verificaPalindrome(palindrome) {
+function verificaPalindrome(entrada) {
     let entrada = "o galo ama o lago";
     
     //remove espaços em branco

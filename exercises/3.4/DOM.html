@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 3.4</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        // Parte 1
+      // Exercício 1
+        var h1 = document.createElement("h1");
+        h1.innerHTML = "Exercício 3.4 - JavaScript DOM"
+        document.getElementsByTagName("body")[0].appendChild(h1);
+
+
+      // Exercício 2
+        var divMain = document.createElement("div");
+        divMain.className = "main-content";
+        document.getElementsByTagName("body")[0].appendChild(divMain);
+
+
+      // Exercício 3
+        var divCenter = document.createElement("div");
+        divCenter.className = "center-content";
+        document.getElementsByClassName("main-content")[0].appendChild(divCenter);
+
+
+      // Exercício 4
+        var pCenter = document.createElement("p");
+        pCenter.innerHTML = "Trybe é foda";
+        document.getElementsByClassName("center-content")[0].appendChild(pCenter);
+
+
+      // Exercício 5
+        var divLeft = document.createElement("div");
+        divLeft.className = "left-content";
+        document.getElementsByClassName("main-content")[0].appendChild(divLeft);
+
+
+      // Exercício 6
+        var divRight = document.createElement("div");
+        divRight.className = "right-content";
+        document.getElementsByClassName("main-content")[0].appendChild(divRight);
+
+
+      // Exercício 7
+        var imageSmall = document.createElement("img");
+        imageSmall.src = "https://picsum.photos/200";
+        imageSmall.className = "small-image";
+        document.getElementsByClassName("left-content")[0].appendChild(imageSmall);
+
+
+      // Exercício 8
+        var ulist = document.createElement("ul");
+        document.getElementsByClassName("right-content")[0].appendChild(ulist);
+
+            var li1 = document.createElement("li");
+            li1.innerHTML = "Um";
+            document.getElementsByTagName("ul")[0].appendChild(li1);
+
+            var li2 = document.createElement("li");
+            li2.innerHTML = "Dois";
+            document.getElementsByTagName("ul")[0].appendChild(li2);
+             
+            var li3 = document.createElement("li");
+            li3.innerHTML = "Três";
+            document.getElementsByTagName("ul")[0].appendChild(li3);
+
+            var li4 = document.createElement("li");
+            li4.innerHTML = "Quatro";
+            document.getElementsByTagName("ul")[0].appendChild(li4);
+
+            var li5 = document.createElement("li");
+            li5.innerHTML = "Cinco";
+            document.getElementsByTagName("ul")[0].appendChild(li5);
+
+            var li6 = document.createElement("li");
+            li6.innerHTML = "Seis";
+            document.getElementsByTagName("ul")[0].appendChild(li6);
+
+            var li7 = document.createElement("li");
+            li7.innerHTML = "Sete";
+            document.getElementsByTagName("ul")[0].appendChild(li7);
+
+            var li8 = document.createElement("li");
+            li8.innerHTML = "Oito";
+            document.getElementsByTagName("ul")[0].appendChild(li8);
+
+            var li9 = document.createElement("li");
+            li9.innerHTML = "Nove";
+            document.getElementsByTagName("ul")[0].appendChild(li9);
+
+            var li10 = document.createElement("li");
+            li10.innerHTML = "Dez";
+            document.getElementsByTagName("ul")[0].appendChild(li10);
+            // Eu tentei fazer com for, mas deu muito errado
+
+
+      // Exercício 9
+        for(i = 0; i < 3; i++){
+            let h3 = document.createElement("h3");            
+            document.getElementsByClassName("main-content")[0].appendChild(h3);
+            // Parte 2 / / Exercício 2
+            h3.className = "description";
+        }
+
+
+        // Parte 2
+      // Exercício 1
+        h1.className = "title";
+        
+      // Exercício 3
+        document.getElementsByClassName("main-content")[0].removeChild(divLeft);
+
+      // Exercício 4
+        divRight.style = "margin-right: auto";
+
+      // Exercício 5
+        divCenter.parentNode.style.background = "green";
+
+      // Exercício 6
+        ulist.removeChild(li9);
+        ulist.removeChild(li10);
+
+    </script>
+  </body>
+</html>

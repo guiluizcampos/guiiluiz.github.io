@@ -1,0 +1,39 @@
+.title {
+    color: lightslategray;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: orange;
+    font-weight: bold;
+    margin-top: -0.5%;
+}
+
+#rgb {
+    margin-top: 3%;
+    color: orangered;
+    font-weight: bold;
+}
+
+#result {
+    font-weight: bold;
+}
+
+.color {
+    margin-top: 25%;
+    margin-left: 30%;
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}
+
+#scorediv {
+    background: #c6c6c6;
+    width: 5%;
+    margin-bottom: -2%;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 17px;
+}

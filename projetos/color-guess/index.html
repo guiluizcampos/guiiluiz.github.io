@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Color Guess - CG</title>
+</head>
+
+<body onload="changeColor()">
+
+    <div class="jumbotron text-center">
+        <h1 style="color: green">Projeto 3 - Color Guess</h1>
+        <h2 class="title">Pontuação:</h2>
+        <div class="container" id="scorediv" onmouseover="showResetScoreButton()" onmouseout="hideResetScoreButton()">
+            <span id="score" onclick="resetScore()">0</span>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="subtitle">Adivinhe a Cor!</h2>
+            <h4 id="rgb">(000,000,000)</h4>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="color" id="color1" onclick="chooseColor('#color1')"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="color" id="color2" onclick="chooseColor('#color2')"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="color" id="color3" onclick="chooseColor('#color3')"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="color" id="color4" onclick="chooseColor('#color4')"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="color" id="color5" onclick="chooseColor('#color5')"></div>
+            </div>
+            <div class="col-sm-2">
+                <div class="color" id="color6" onclick="chooseColor('#color6')"></div>
+            </div>
+        </div>
+        <div class="row text-center">
+            <h2 id="result"></h2>
+            <button id="reiniciar" onclick="resetGame()" style="display: none">Reiniciar</button>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

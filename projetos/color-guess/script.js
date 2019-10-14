@@ -1,29 +1,35 @@
+window.onload = changeColor
+
 function randomColor() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var rcolor = "rgb(" + x + "," + y + "," + z + ")";
+    let red = Math.floor(Math.random() * 256);
+    let green = Math.floor(Math.random() * 256);
+    let blue = Math.floor(Math.random() * 256);
+    let rcolor = "rgb(" + red + "," + green + "," + blue + ")";
     return rcolor
 }
 
-var correct = Math.floor(Math.random() * (6 - 0) + 0); // Opção aleatória que será a resposta correta
+// Opção aleatória que será a resposta correta
+function correctColor() {
+    return Math.floor(Math.random() * (6 - 0) + 0);
+}
+
+let correct =  correctColor();
 
 function changeColor() {
-    let c, options = document.querySelectorAll('.color');
-    for (c = 0; c < options.length; c++) {
-        options[c].style.backgroundColor = randomColor(); // Coloca cores aleatórias nas opções
+    let options = document.querySelectorAll('.color');
+    for (let colorIndex = 0; colorIndex < options.length; colorIndex++) {
+        options[colorIndex].style.backgroundColor = randomColor(); // Coloca cores aleatórias nas opções
     }
     // Define o rgb do texto da dica
-    var correctanswer = document.getElementsByClassName("color")[correct]
+    const correctanswer = document.getElementsByClassName("color")[correct]
     document.getElementById("rgb").innerHTML = correctanswer.style.backgroundColor
     return options
 }
 
-var selected;
-var answer;
+let selected;
 
 function chooseColor(cor) {
-    answer = document.querySelector(cor).style.backgroundColor;
+    let answer = document.querySelector(cor).style.backgroundColor;
     clearSelected()
     selected = document.querySelector(cor)
     selectColor()
@@ -31,25 +37,25 @@ function chooseColor(cor) {
     document.getElementById("reiniciar").style.display = "inline-block";
 }
 
-var scorepoint = 0; // Cria variável para executar a soma do placar
+let scorePoint = 0; // Cria variável para executar a soma do placar
 
 function resultScore(answer) {
-    let result = document.querySelectorAll(".color")[correct]
+    const result = document.querySelectorAll(".color")[correct]
     if (answer == result.style.backgroundColor) {
         document.getElementById("result").style.color = "lightgreen";
         document.getElementById("result").innerHTML = "Correct!";
-        scorepoint = scorepoint + 3;
-        document.getElementById("score").innerHTML = scorepoint;
-        setTimeout(resetGame, 400);
+        scorePoint += 3;
+        document.getElementById("score").innerHTML = scorePoint;
+        setTimeout(resetGame, 500);
     } else {
         document.getElementById("result").style.color = "salmon";
         document.getElementById("result").innerHTML = "Wrong Answer! Guess Again!";
-        if (scorepoint <= 0) {
-            scorepoint = 0;
+        if (scorePoint <= 0) {
+            scorePoint = 0;
         } else {
-            scorepoint = scorepoint - 1
+            scorePoint -= 1;
         }
-        document.getElementById("score").innerHTML = scorepoint;
+        document.getElementById("score").innerHTML = scorePoint;
     }
 }
 
@@ -73,7 +79,7 @@ function clearSelected() {
 function resetGame() {
     document.getElementById("result").innerHTML = "";
     document.getElementById("reiniciar").style.display = "none";
-    correct = Math.floor(Math.random() * (6 - 0) + 0);
+    correct = correctColor();
     changeColor();
     clearSelected()
 }
@@ -83,9 +89,9 @@ function showResetScoreButton() {
 }
 
 function hideResetScoreButton() {
-    document.getElementById("score").innerHTML = scorepoint;
+    document.getElementById("score").innerHTML = scorePoint;
 }
 
 function resetScore() {
-    scorepoint = 0;
+    scorePoint = 0;
 }

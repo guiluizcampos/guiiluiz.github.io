@@ -1,18 +1,26 @@
-.title {
+.score-title {
     color: lightslategray;
+    font-family: monospace;
     font-weight: bold;
+    font-variant: small-caps;
+    font-size: 32px;
 }
 
 .subtitle {
     color: orange;
-    font-weight: bold;
     margin-top: -0.5%;
+    font-weight: 600;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 35px;
 }
 
 #rgb {
-    margin-top: 3%;
+    margin-top: 2%;
     color: orangered;
-    font-weight: bold;
+    font-family: monospace;
+    font-variant: small-caps;
+    font-size: 20px;
 }
 
 #result {
@@ -27,7 +35,7 @@
     border-radius: 40px;
 }
 
-#scorediv {
+#score-div {
     background: #c6c6c6;
     width: 5%;
     margin-bottom: -2%;

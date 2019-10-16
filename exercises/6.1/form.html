@@ -21,6 +21,14 @@
             padding: 0 10px;
             border-bottom: none;
         }
+
+        .container {
+            width: 950px;
+        }
+
+        #user-curriculum {
+            display: none;
+        }
     </style>
 </head>
 
@@ -81,7 +89,7 @@
                     <label for="" class="col-sm-1 col-form-label text-center">Tipo:</label>
                     <div class="col-sm-2">
                         <div class="form-check form-check-inline">
-                            <input type="radio" id="type-house" name="type" value="house" required="required"
+                            <input type="radio" id="type-house" name="type" value="Casa" required="required"
                                 class="form-check-input">
                             <label for="type-house" class="form-check-label">
                                 Casa
@@ -89,7 +97,7 @@
                         </div>
 
                         <div class="form-check form-check-inline">
-                            <input type="radio" id="type-apartment" name="type" value="apartment" required="required"
+                            <input type="radio" id="type-apartment" name="type" value="Apartamento" required="required"
                                 class="form-check-input">
                             <label for="type-apartment" class="form-check-label">
                                 Apartamento
@@ -102,10 +110,10 @@
             <fieldset class="form-group scheduler-border">
                 <legend class="scheduler-border">Último Emprego</legend>
                 <div class="form-group row">
-                    <label for="curriculum" class="col-sm-2 col-form-label">Resumo do Currículo:</label>
+                    <label for="curriculum-summary" class="col-sm-2 col-form-label">Resumo do Currículo:</label>
                     <div class="col-sm-10">
-                        <textarea maxlength="1000" required="required" class="form-control" rows="3" id="curriculum"
-                            placeholder="Resuma seu cúrriculo em 300 palavras"></textarea>
+                        <textarea maxlength="1000" required="required" class="form-control" rows="3" id="curriculum-summary"
+                            placeholder="Resuma seu currículo em 300 palavras"></textarea>
                     </div>
                 </div>
 
@@ -125,14 +133,15 @@
                 <div class="form-group row">
                     <label for="position-description" class="col-sm-2 col-form-label">Descrição do Cargo:</label>
                     <div class="col-sm-10">
-                        <input type="text" maxlength="500" required="required" class="form-control" id="position-description"
-                            placeholder="Descreva a função do seu cargo na empresa">
+                        <input type="text" maxlength="500" required="required" class="form-control"
+                            id="position-description" placeholder="Descreva a função do seu cargo na empresa">
                     </div>
                 </div>
             </fieldset>
             <button type="submit" id="btn-submit" class="btn btn-dark btn-block">Enviar</button>
-            <button type="button" id="btn-clear" class="btn btn-outline-danger btn-block">Limpar</button>
+            <button type="reset" id="btn-clear" class="btn btn-outline-danger btn-block">Limpar</button>
             <br>
+            <div id="user-curriculum" class="form-control"></div>
         </form>
     </div>
 

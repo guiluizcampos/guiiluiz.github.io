@@ -43,5 +43,10 @@ figure {
 @media screen and (min-width: 1075px) {
     body {
         background: #fda26c;
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 36px;
     }
 } 

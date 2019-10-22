@@ -29,16 +29,13 @@ figure {
     }
     
     figure {
-        width: 48%;
-    }
-
-    figure:nth-child(2n) {
-        margin-left: 10px;
+        width: 45%;
     }
 
     .figures {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
     }
 }

@@ -16,3 +16,9 @@ img {
 figure {
 	margin: 50px 0;
 }
+
+@media screen and (min-width: 492px) {
+    body {
+        background: #0fa36b;
+    }
+}

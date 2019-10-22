@@ -39,3 +39,7 @@ figure {
         justify-content: space-around;
     }
 }
+
+@media screen and (min-width: 1075px) {
+    
+} 

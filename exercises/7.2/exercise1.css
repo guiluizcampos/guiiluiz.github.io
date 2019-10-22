@@ -14,7 +14,7 @@ img {
 }
 
 figure {
-	margin: 50px 0;
+    margin: 50px 0;
 }
 
 @media screen and (min-width: 492px) {
@@ -26,5 +26,19 @@ figure {
 
     h1 {
         font-size: 32px;
+    }
+    
+    figure {
+        width: 48%;
+    }
+
+    figure:nth-child(2n) {
+        margin-left: 10px;
+    }
+
+    .figures {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 }

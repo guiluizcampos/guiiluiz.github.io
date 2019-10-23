@@ -1,20 +1,33 @@
 #exercise-1 {
-    display: flex;
-    animation-name: exercise1;
+    animation-name: exercise1-2;
     animation-delay: 1s;
     animation-duration: 3s;
 }
 
 #exercise-2 {
-    display: flex;
-    animation-name: exercise1;
+    animation-name: exercise1-2;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes exercise1 {
+@keyframes exercise1-2 {
     to {
         margin-left: 95%;
+    }
+}
+
+#exercise-3 {
+    animation-name: exercise3;
+    animation-duration: 2s;
+}
+
+@keyframes exercise3 {
+    50% {
+        margin-left: 95%;
+    }
+
+    100% {
+        margin-left: 0;
     }
 }

@@ -47,3 +47,14 @@
         margin-left: 95%;
     }
 }
+
+section:hover #exercise-5 {
+    animation-name: exercise5;
+    animation-duration: 5s;
+}
+
+@keyframes exercise5 {
+    to {
+        margin-left: 95%;
+    }
+}

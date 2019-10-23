@@ -31,3 +31,19 @@
         margin-left: 0;
     }
 }
+ 
+#exercise-4 {
+    animation-play-state: paused;
+}
+
+#exercise-4:hover {
+    animation-name: exercise4;
+    animation-play-state: running;
+    animation-duration: 5s;
+}
+
+@keyframes exercise4 {
+    to {
+        margin-left: 95%;
+    }
+}

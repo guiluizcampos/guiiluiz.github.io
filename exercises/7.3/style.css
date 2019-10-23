@@ -1,0 +1,20 @@
+#exercise-1 {
+    display: flex;
+    animation-name: exercise1;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+#exercise-2 {
+    display: flex;
+    animation-name: exercise1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exercise1 {
+    to {
+        margin-left: 95%;
+    }
+}

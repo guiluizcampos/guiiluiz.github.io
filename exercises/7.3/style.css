@@ -85,3 +85,14 @@ section:hover #exercise-5 {
         width: "";
     }
 }
+
+#exercise-8 {
+    animation-name: exercise8;
+    animation-duration: 4s;
+}
+
+@keyframes exercise8 {
+    to {
+        background: yellow;
+    }
+}

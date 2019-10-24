@@ -69,3 +69,19 @@ section:hover #exercise-5 {
         margin-right: 90%;
     }
 }
+
+#exercise-7 {
+    animation-name: exercise7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exercise7 {
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: "";
+    }
+}

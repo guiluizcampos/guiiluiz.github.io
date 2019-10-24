@@ -58,3 +58,14 @@ section:hover #exercise-5 {
         margin-left: 95%;
     }
 }
+
+#exercise-6-square:hover + #exercise-6 {
+    animation-name: exercise6;
+    animation-duration: 5s;
+}
+
+@keyframes exercise6 {
+    to {
+        margin-right: 90%;
+    }
+}

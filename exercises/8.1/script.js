@@ -17,3 +17,5 @@ function longestWord(sentence) {
 }
 
 longestWord("Antônio foi no banheiro e não sabemos o que aconteceu")
+
+// Exercicio 3

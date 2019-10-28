@@ -181,3 +181,15 @@ section:hover #exercise-5 {
         margin-left: 95%;
     }
 }
+
+#exercise-12:active {
+    animation-name: exercise12;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exercise12 {
+    to {
+        opacity: 0;
+    }
+}

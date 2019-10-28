@@ -89,10 +89,43 @@ section:hover #exercise-5 {
 #exercise-8 {
     animation-name: exercise8;
     animation-duration: 4s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes exercise8 {
     to {
         background: yellow;
+    }
+}
+
+#exercise-9 {
+    animation-name: exercise9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exercise9 {
+    0% {
+        background: yellow;
+    }
+
+    20% {
+        background: blue;
+    }
+
+    40% {
+        background: green;
+    }
+
+    60% {
+        background: blue;
+    }
+
+    80% {
+        background: yellow;
+    }
+
+    100% {
+        background: red;
     }
 }

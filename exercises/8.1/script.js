@@ -1,1 +1,2 @@
-const getFatorial = (number = 4) => {for (let i = number-1; i > 0; i--) number *= i;}
+// Exercicio 1
+const getFatorial = (number) => {for (let i = number-1; i > 0; i--) number *= i;}

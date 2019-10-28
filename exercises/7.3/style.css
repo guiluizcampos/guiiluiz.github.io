@@ -135,3 +135,49 @@ section:hover #exercise-5 {
     animation-duration: 10s;
     animation-iteration-count: infinite;
 }
+
+#exercise-11_1 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#exercise-11_2 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#exercise-11_3 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#exercise-11_4 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#exercise-11_5 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes exercise11 {
+    to {
+        margin-left: 95%;
+    }
+}

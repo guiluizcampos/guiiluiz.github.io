@@ -129,3 +129,9 @@ section:hover #exercise-5 {
         background: red;
     }
 }
+
+#exercise-10 {
+    animation-name: exercise9, exercise7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}

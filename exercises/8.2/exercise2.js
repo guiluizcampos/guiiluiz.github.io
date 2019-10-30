@@ -69,8 +69,7 @@ const object = books.filter(books => books.author.name.split(" ")[0].length == 2
                                 && books.author.name.split(" ")[2].length == 2)
 
 function authorWith3DotsOnName() {
-    const resultObject = object.find( object => object.author.name.length < 18 )
-    return resultObject.name
+    return object.find( object => object.author.name.length < 18 ).name
 }
 
 assert.deepEqual(authorWith3DotsOnName(), expected_result);

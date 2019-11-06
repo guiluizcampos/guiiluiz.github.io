@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leitura Adaptável</title>
+    <style>
+        .read-text {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 5px;
+            padding: 0 50px;
+        }
+
+        .text-part {
+            width: 45%;
+            padding: 10px;
+            border: 1px solid black;
+            padding-top: 0;
+        }
+
+        .text-full {
+            text-align: center;
+            width: 95%;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .buttons section {
+            margin: 5px 0;
+        }
+
+        h1 {
+            font-family: monospace;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        h3 {
+            margin: 0;
+            margin-top: 10px;
+        }
+
+        button {
+            border-radius: 6px;
+            border: 0;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            if (typeof (Storage) != "undefined") {
+                let backgroundColor = localStorage.backgroundColor
+                if (backgroundColor) document.body.style.backgroundColor = backgroundColor
+
+                let fontColor = localStorage.fontColor
+                if (fontColor) document.body.style.color = fontColor
+
+                let fontSize = localStorage.fontSize
+                if (fontSize) document.body.style.fontSize = fontSize
+
+                let lineHeight = localStorage.lineHeight
+                if (lineHeight) document.body.style.lineHeight = lineHeight
+
+                let fontFamily = localStorage.fontFamily
+                if (fontFamily) document.body.style.fontFamily = fontFamily
+            } else {
+                document.write("Sem suporte para Web Storage")
+            }
+
+            const backgroundButtons = document.getElementsByClassName("background-btn")
+            for (let button of backgroundButtons) {
+                button.addEventListener("click", (event) => {
+                    let backgroundColor = event.target.value
+                    localStorage.setItem("backgroundColor", backgroundColor)
+                    document.body.style.backgroundColor = backgroundColor
+                })
+            }
+
+            const fontColorButtons = document.getElementsByClassName("font-color-btn")
+            for (let button of fontColorButtons) {
+                button.addEventListener("click", (event) => {
+                    let color = event.target.value
+                    localStorage.setItem("fontColor", color)
+                    document.body.style.color = color
+                })
+            }
+
+            const fontSizeButtons = document.getElementsByClassName("font-size-btn")
+            for (let button of fontSizeButtons) {
+                button.addEventListener("click", (event) => {
+                    let size = event.target.value
+                    localStorage.setItem("fontSize", size)
+                    document.body.style.fontSize = size
+                })
+            }
+
+            const lineHeightButtons = document.getElementsByClassName("line-height-btn")
+            for (let button of lineHeightButtons) {
+                button.addEventListener("click", (event) => {
+                    let height = event.target.value
+                    localStorage.setItem("lineHeight", height)
+                    document.body.style.lineHeight = height
+                })
+            }
+
+            const fontFamilyButtons = document.getElementsByClassName("font-family-btn")
+            for (let button of fontFamilyButtons) {
+                button.addEventListener("click", (event) => {
+                    let family = event.target.value
+                    localStorage.setItem("fontFamily", family)
+                    document.body.style.fontFamily = family
+                })
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="buttons">
+        <h1>LEITURA ADAPTÁVEL</h1>
+        <h3>Cor de Fundo</h3>
+        <section class="background-buttons">
+            <button class="background-btn" value="green">Verde</button>
+            <button class="background-btn" value="blue">Azul</button>
+            <button class="background-btn" value="yellow">Amarelo</button>
+            <button class="background-btn" value="purple">Roxo</button>
+            <button class="background-btn" value="red">Vermelho</button>
+        </section>
+        <h3>Cor da Fonte</h3>
+        <section class="font-color-buttons">
+            <button class="font-color-btn" value="black">Preto</button>
+            <button class="font-color-btn" value="white">Branco</button>
+        </section>
+        <h3>Tamanho da Fonte</h3>
+        <section class="font-size-buttons">
+            <button class="font-size-btn" value="14px">Pequeno</button>
+            <button class="font-size-btn" value="16px">Médio</button>
+            <button class="font-size-btn" value="20px">Grande</button>
+        </section>
+        <h3>Espaçamento entre Linhas</h3>
+        <section class="line-height-buttons">
+            <button class="line-height-btn" value="100%">Pequeno</button>
+            <button class="line-height-btn" value="125%">Médio</button>
+            <button class="line-height-btn" value="150%">Grande</button>
+        </section>
+        <h3>Tipo de Fonte</h3>
+        <section class="font-family-buttons">
+            <button class="font-family-btn" value="monospace">Monospace</button>
+            <button class="font-family-btn" value="fantasy">Fantasy</button>
+            <button class="font-family-btn" value="serif">Serif</button>
+            <button class="font-family-btn" value="sans-serif">Sans Serif</button>
+        </section>
+    </section>
+
+    <section class="read-text">
+        <article class="text-full">
+            <h2>Where does it come from?</h2>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
+            Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
+            undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum"
+            (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of
+            ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..",
+            comes from a line in section 1.10.32.
+        </article>
+        <article class="text-part">
+            <h2>What is Lorem Ipsum?</h2>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum.
+        </article>
+        <article class="text-part">
+            <h2>Why do we use it?</h2>
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+            of letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+            desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+            search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have
+            evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        </article>
+    </section>
+</body>
+
+</html>

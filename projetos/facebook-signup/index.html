@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/DatePickerX.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/DatePickerX.min.js"></script>
+    <script src="https://kit.fontawesome.com/0666bd3f6b.js" crossorigin="anonymous"></script>
+    <script defer src="js/script.js"></script>
+    <title>Facebook - Cadastro</title>
+</head>
+
+<body>
+    <nav class="navbar-login">
+            <form id="form-login" action="" method="post" >
+                <div class="navbar-content">
+                <div class="logo">
+                    <img src="images/facebook-logo-1.png">
+                </div>
+
+                <div class="navbar-inputs">
+                    <div class="user">
+                        <p class="">Email ou telefone</p>
+                        <input type="text" name="user-login" required="required" />
+                        <p class="hidden">Escondido</p>
+                    </div>
+                    <div class="password">
+                        <p class="">Senha</p>
+                        <input type="password" name="password" required="required" />
+                        <p class="forgot-account">Esqueceu a conta?</p>
+                    </div>
+                    <div class="button">
+                        <button id="button-login" type="submit">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </nav>
+    <section class="container-content">
+            <div class="content-www">
+                <p class="www-title">O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+                <img src="images/worldspread-facebook.png">
+            </div>
+
+            <div class="signup">
+                <form id="form-signup" action="" method="post" >
+                    <h1>Abra uma conta</h1>
+                    <p id="subtitle">É rápido e fácil!</p>
+                    <div class="name">
+                        <input class="signup-input" type="text" id="name" name="name" placeholder="Nome" required="required"/>
+                        <input class="signup-input" type="text" id="surname" name="surname" placeholder="Sobrenome" required="required"/>
+                    </div>
+                    <input class="signup-input" type="text" id="cellphone-email" name="cellphone-email" placeholder="Celular ou e-mail" required="required"/>
+                    <input class="signup-input" type="text" id="new-password" name="new-password" placeholder="Nova senha" required="required"/>
+                    <span>Data de nascimento</span>
+                    <div class="container-birthday">
+                        <input class="signup-input birthday-input" type="text" name="datepicker" id="date-picker" required="required">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <span>Gênero</span>
+                    <div class="gender">
+                        <label class="font-color-black" for="female"><input type="radio" id="female" value="female" name="gender" required="required"/> Feminino</label>
+                        <label class="font-color-black" for="male"><input type="radio" id="male" value="male" name="gender" required="required"/> Masculino</label>
+                        <label class="font-color-black" for="custom"><input type="radio" id="custom" value="custom" name="gender" required="required"/> Personalizado</label>
+                       <i class="fas fa-question-circle"></i>
+                    </div>
+                    <p id="privacy">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos,</a><br> <a href="">Política de Dados</a> e
+                        <a href="">Política de Cookies.</a> Você pode receber<br>notificações por SMS e pode cancelar isso quando quiser.</p>
+                    <button type="submit" id="register" class="button-submit">Cadastre-se</button>
+                </form>
+            </div>
+    </section>
+</body>
+</html>

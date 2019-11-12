@@ -1,0 +1,452 @@
+@font-face {
+    font-family: "Mugglenews";
+    src: url('fonts/mugglenews.ttf');
+}
+
+body {
+    background-image: url("img/woodbg.jpg");
+    cursor: url('img/varinha1.png'), auto;
+    display: flex;
+    font-family: 'Vollkorn', serif;
+    justify-content: center;
+}
+
+.navbar-text {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.hidden {
+    display: none;
+}
+
+.title-font {
+    font-family: "Mugglenews";
+    font-size: 14px;
+    font-weight: 550;
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.newspaper {
+    background: #fff8ee;
+    border-radius: 16px;
+    box-shadow: none;
+    fill: #1c1915;
+    margin: 16px 0;
+    padding: 16px;
+    position: relative;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    position: relative;
+}
+
+.newspaper-topheader {
+    padding-top: 8px;
+    text-align: center;
+}
+
+.logo-shield {
+    display: none;
+    position: relative;
+}
+
+.header-title {
+    bottom: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.header-subtitle {
+    font-family: 'Kreon', serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    width: 100%;
+}
+
+.hr-double-top {
+    border-bottom: 1px solid #1c1915;
+    border-top: 3px solid #1c1915;
+    height: 2px;
+    position: relative;
+    top: 3px;
+}
+
+.hr-double-bottom {
+    border-bottom: 3px solid #1c1915;
+    border-top: 1px solid #1c1915;
+    height: 2px;
+}
+
+.header-navbar {
+    border-bottom: 1px dashed #1c1915;
+}
+
+ul {
+    background-color: #fff8ee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 5px 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+li a {
+    color: #1c1915;
+    font-family: "Mugglenews";
+    font-size: 15px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    font-weight: bolder;
+}
+
+.article-with-image {
+    border-bottom: 1px dashed #1c1915;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.article-img {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: article-img;
+    height: 40%;
+    max-width: 230px;
+    width: 40%;
+}
+
+.article-text {
+    font-size: 13px;
+    margin-top: 3%;
+    width: 60%;
+}
+
+.article-text h4 {
+    margin: 0;
+    margin-top: 2%;
+}
+
+@keyframes article-img {
+    50% {
+        transform: rotate(40deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.weather-section {
+    border-bottom: 1px dashed #1c1915;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.weather-container {
+    border: 3px double #1c1915;
+    height: 100px;
+    margin: 2% 1px;
+    min-width: 50px;
+    text-align: center;
+    width: 22%;
+}
+
+.weather-degrees {
+    font-family: 'Kreon', serif;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+
+.weather-city {
+    border-bottom: 3px double #1c1915;
+    border-top: 3px double #1c1915;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.raining-gif {
+    height: 125px;
+    position: absolute;
+    width: 97%;
+}
+
+.flying-star {
+    animation: flying-star 10s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    left: 0;
+    margin-top: -15px;
+    position: absolute;
+    width: 50px;
+}
+
+.flying-star:hover {
+    animation-play-state: paused;
+}
+
+@keyframes flying-star {
+    0% {
+        left: 0;
+        transform: rotate(0deg);
+    }
+    50% {
+        left: 90%;
+    }
+    60% {
+        animation-direction: reverse;
+    }
+    80% {
+        left: 0;
+    }
+    90% {
+        animation-direction: normal;
+    }
+    100% {
+        left: 90%;
+        transform: rotate(360deg);
+    }
+}
+
+.footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-center {
+    text-align: center;
+}
+
+.footer-company-name {
+    font-style: italic;
+}
+
+.sale-nimbus {
+    border-bottom: 1px dashed #1c1915;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.sale-description {
+    font-size: 13px;
+    width: 60%;
+}
+
+.nimbus2000 {
+    height: 20%;
+    margin: 0 5px;
+    margin-top: 50px;
+    max-width: 220px;
+    width: 40%;
+}
+
+.nimbus2000:active {
+    transform: translateX(50px) scale(2.0, 2.0) rotate(-40deg);
+}
+
+@media screen and (min-width: 1024px) {
+    .newspaper {
+        max-width: 1024px;
+    }
+    .title-font {
+        font-size: 18px;
+    }
+    .hr-double-top {
+        top: 15px;
+    }
+    .header-subtitle {
+        font-size: 17px;
+    }
+    li a {
+        font-size: 18px;
+    }
+    .article-img {
+        height: 30%;
+        width: 30%;
+    }
+    .article-text {
+        transition: all 4s;
+        width: 70%;
+    }
+    .article-text:active {
+        font-size: 25.5px;
+        font-weight: bold;
+    }
+    .weather-container {
+        height: 125px;
+    }
+    .weather-degrees {
+        margin-top: 8%;
+    }
+    .raining-gif {
+        height: 170px;
+    }
+    .sale-description {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 761px) {
+    .logo-shield {
+        display: block;
+        width: 15%;
+    }
+    .header-title {
+        bottom: 27px;
+        width: 84%;
+    }
+    .header-subtitle {
+        font-size: 13px;
+    }
+    .title-font {
+        font-size: 17px;
+    }
+    .hr-double-top {
+        top: 6px;
+    }
+    ul {
+        margin: 15px 0;
+    }
+    li a {
+        font-size: 17px;
+    }
+    .article-img {
+        height: 35%;
+        width: 35%;
+    }
+    .article-text {
+        font-size: 17px;
+        width: 70%;
+    }
+    .weather-degrees {
+        font-size: 34px;
+        margin-bottom: 0;
+    }
+    .weather-city {
+        font-size: 22px;
+        margin-top: 3%;
+    }
+    @keyframes flying-star {
+        0% {
+            left: 0;
+            transform: rotate(0deg);
+        }
+        50% {
+            left: 93%;
+        }
+        60% {
+            animation-direction: reverse;
+        }
+        80% {
+            left: 0;
+        }
+        90% {
+            animation-direction: normal;
+        }
+        100% {
+            left: 93%;
+            transform: rotate(360deg);
+        }
+    }
+    .sale-description {
+        font-size: 17px;
+        width: 70%;
+    }
+    .nimbus2000 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hr-double-top {
+        top: -5px;
+    }
+    .header-subtitle {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+    li a {
+        font-size: 13px;
+    }
+    .article-img {
+        display: none;
+    }
+    .article-text {
+        font-size: 12px;
+        width: 100%;
+    }
+    .title-font {
+        font-size: 12px;
+    }
+    .weather-container {
+        height: 50px;
+        margin: 2% 1px;
+    }
+    .raining-gif {
+        display: none;
+    }
+    .flying-star {
+        display: none;
+    }
+    .footer-center {
+        font-size: 12px;
+    }
+    .weather-city {
+        border-bottom: none;
+        font-size: 12px;
+    }
+    .weather-degrees {
+        font-size: 14px;
+        margin: 0;
+    }
+    .sale-nimbus {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nimbus2000 {
+        width: 100%;
+    }
+    .sale-description {
+        font-size: 12px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 450px) and (orientation: landscape) {
+    .hr-double-top {
+        top: -3px;
+    }
+    .header-subtitle {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 650px) and (orientation: landscape) {
+    .hr-double-top {
+        top: 0;
+    }
+    .header-subtitle {
+        font-size: 12px;
+    }
+}

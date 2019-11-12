@@ -1,0 +1,195 @@
+#exercise-1 {
+    animation-name: exercise1-2;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+#exercise-2 {
+    animation-name: exercise1-2;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exercise1-2 {
+    to {
+        margin-left: 95%;
+    }
+}
+
+#exercise-3 {
+    animation-name: exercise3;
+    animation-duration: 2s;
+}
+
+@keyframes exercise3 {
+    50% {
+        margin-left: 95%;
+    }
+
+    100% {
+        margin-left: 0;
+    }
+}
+ 
+#exercise-4 {
+    animation-play-state: paused;
+}
+
+#exercise-4:hover {
+    animation-name: exercise4;
+    animation-play-state: running;
+    animation-duration: 5s;
+}
+
+@keyframes exercise4 {
+    to {
+        margin-left: 95%;
+    }
+}
+
+section:hover #exercise-5 {
+    animation-name: exercise5;
+    animation-duration: 5s;
+}
+
+@keyframes exercise5 {
+    to {
+        margin-left: 95%;
+    }
+}
+
+#exercise-6-square:hover + #exercise-6 {
+    animation-name: exercise6;
+    animation-duration: 5s;
+}
+
+@keyframes exercise6 {
+    to {
+        margin-right: 90%;
+    }
+}
+
+#exercise-7 {
+    animation-name: exercise7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exercise7 {
+    50% {
+        width: 100%;
+    }
+
+    100% {
+        width: "";
+    }
+}
+
+#exercise-8 {
+    animation-name: exercise8;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exercise8 {
+    to {
+        background: yellow;
+    }
+}
+
+#exercise-9 {
+    animation-name: exercise9;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes exercise9 {
+    0% {
+        background: yellow;
+    }
+
+    20% {
+        background: blue;
+    }
+
+    40% {
+        background: green;
+    }
+
+    60% {
+        background: blue;
+    }
+
+    80% {
+        background: yellow;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+#exercise-10 {
+    animation-name: exercise9, exercise7;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+#exercise-11_1 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+#exercise-11_2 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+#exercise-11_3 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+#exercise-11_4 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+#exercise-11_5 {
+    animation-name: exercise11;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes exercise11 {
+    to {
+        margin-left: 95%;
+    }
+}
+
+#exercise-12:active {
+    animation-name: exercise12;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes exercise12 {
+    to {
+        opacity: 0;
+    }
+}

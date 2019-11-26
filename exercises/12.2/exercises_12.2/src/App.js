@@ -29,6 +29,18 @@ class Content extends React.Component {
     return this.props.myNumber % 3 === 0
   }
 
+  componentDidUpdate() {
+    alert('Número Válido')
+  }
+  
+  componentDidMount() {
+    alert('Componente Montado')
+  }
+
+  componentWillUnmount() {
+    localStorage.myNumber = this.props.myNumber
+  }
+
   render() {
     return (
       <div>

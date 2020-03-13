@@ -1,14 +1,14 @@
 .square {
   background: white;
   border: 1px solid gray;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: bold;
-  height: 50px;
+  height: 70px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 50px;
+  width: 70px;
 }
 
 .square:focus {
@@ -19,11 +19,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 150px;
+  width: 210px;
 }
 
 .game {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.game-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.restart-game {
+  background: lightblue;
+  border: 1.3px solid black;
+  font-weight: bold;
+  margin-top: 15px;
+  padding: 10px;
+  width: 130px;
 }

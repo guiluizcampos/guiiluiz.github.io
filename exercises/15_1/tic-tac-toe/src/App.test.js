@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, cleanup, fireEvent } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';

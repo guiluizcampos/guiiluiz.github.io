@@ -1,0 +1,274 @@
+h3 , p {
+  margin: 0;
+}
+
+button:active , button:focus {
+  border: none;
+}
+
+.ProductList {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 100%;
+  min-width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  width: 78%;
+}
+
+.not-search {
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  font-weight: 700;
+  margin-left: 30%;
+}
+
+.ProductList .content-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.img-product {
+  bottom: 76px;
+  height: 120px;
+  right: 76px;
+}
+
+.card-product {
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 25.868px 38.802px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 270px;
+  justify-content: space-around;
+  width: 270px;
+}
+
+.title {
+  color: #091a3f;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  left: 20px;
+  line-height: 21px;
+  margin-top: 10px;
+}
+
+.value {
+  color: #062fb8;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 5px;
+}
+
+.show-btn-remove {
+  align-items: flex-start;
+  background: #0f3ccf;
+  border-radius: 0 0 0 5px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -11px;
+  width: 100%;
+}
+
+.buttonRemoveCart {
+  align-items: center;
+  align-self: flex-start;
+  background: #0f3ccf;
+  border: none;
+  border-radius: 0 0 0 8px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  font-weight: 700;
+  height: 44.5px;
+  justify-content: center;
+  outline: none;
+  text-transform: uppercase;
+  width: 50%;
+}
+
+.buttonRemoveCart:hover {
+  background: #284fcf;
+}
+
+.div-qtd {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.info-product {
+  align-items: center;
+  display: flex;
+}
+
+.buttonAddCart {
+  align-items: center;
+  align-self: flex-start;
+  background: #0f3ccf;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  height: 44.25px;
+  justify-content: center;
+  line-height: 12px;
+  margin-bottom: -10px;
+  outline: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.buttonAddCart:hover {
+  background: #284fcf;
+}
+
+.border {
+  border: 2px solid #0c2fa3;
+  box-sizing: border-box;
+}
+
+.div-qtd button {
+  background: cornflowerblue;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  height: 103%;
+  margin-top: 1px;
+  outline: none;
+  transition: all 300ms;
+  width: 33%;
+}
+
+.div-qtd .left {
+  border-radius: 0 0 0 7px;
+}
+
+.div-qtd .left:disabled {
+  background: grey;
+  border-radius: 0 0 0 7px;
+}
+
+.div-qtd .right {
+  border-radius: 0 0 5px;
+  margin-right: -2.4px;
+}
+
+.div-qtd .right:disabled {
+  background: grey;
+  border-radius: 0 0 5px;
+}
+
+.info {
+  align-self: flex-end;
+  background: lightgray;
+  color: black;
+  padding: 2px 4px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.text-qtd {
+  align-items: center;
+  background: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  height: 103%;
+  justify-content: center;
+  margin-top: 1px;
+  width: 40%;
+}
+
+.icon-cart {
+  border: none;
+  cursor: pointer;
+  height: 45px;
+  width: 45px;
+}
+
+.content-center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.content-shopcart {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  justify-content: space-between;
+  margin-left: 50px;
+  width: 900px;
+}
+
+.btn {
+  background: grey;
+  border: 0;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 35px;
+  height: 60px;
+  margin-right: 10px;
+  width: 60px;
+}
+
+.btn:hover {
+  font-size: 45px;
+}
+
+.div-img {
+  width: 150px;
+}
+
+.img-product-car {
+  border: 2px #052280 solid;
+  margin: 4px;
+  max-width: 120px;
+}
+
+.name-product {
+  font-size: 20px;
+  width: 300px;
+}
+
+.qtd-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  width: 250px;
+}
+
+.qtd-product p {
+  font-size: 20px;
+  height: 60px;
+  margin-top: 20px;
+  text-align: center;
+  width: 60px;
+}
+
+.total {
+  font-size: 20px;
+  height: 60px;
+  margin-top: 20px;
+  text-align: center;
+  width: 140px;
+}

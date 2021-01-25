@@ -1,0 +1,17 @@
+.App {
+  margin: 10px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.subreddit-list {
+  margin: 0 15px;
+}
